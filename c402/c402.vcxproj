@@ -27,9 +27,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{47e6420b-ca5c-470c-8ed8-8b48e5818362}</ProjectGuid>
+    <ProjectGuid>{a8f3f1c3-9830-4d09-b0ff-5d8b6e88db64}</ProjectGuid>
     <Keyword>Linux</Keyword>
-    <RootNamespace>IAL_c06_c401_c402</RootNamespace>
+    <RootNamespace>c402</RootNamespace>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <ApplicationType>Linux</ApplicationType>
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
@@ -61,6 +61,15 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="c402-test.c" />
+    <ClCompile Include="c402.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c402.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="c402-test.output" />
+    <None Include="Makefile" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
