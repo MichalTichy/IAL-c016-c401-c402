@@ -216,6 +216,10 @@ void BTInsert (tBTNodePtr *RootPtr, int Content) {
 	}
 
 	tBTNodePtr newItem = malloc(sizeof(struct tBTNode));
+
+	if (newItem == NULL) //malloc FAILED
+		return;
+
 	newItem->Cont = Content;
 	newItem->LPtr = NULL;
 	newItem->RPtr = NULL;

@@ -124,6 +124,10 @@ void htInsert ( tHTable* ptrht, tKey key, tData data ) {
 
 		//init new item
 		itemToInsert = malloc(sizeof(tHTItem));
+		
+		if (itemToInsert==NULL) //malloc FAILED
+			return;
+
 		itemToInsert->key = key;
 		itemToInsert->data = data;		
 		itemToInsert->ptrnext = item;

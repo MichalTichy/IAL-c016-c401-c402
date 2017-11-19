@@ -111,6 +111,10 @@ void BSTInsert (tBSTNodePtr* RootPtr, char K, int Content)	{
 	if ((*RootPtr) == NULL)
 	{
 		(*RootPtr) = (tBSTNodePtr)malloc(sizeof(struct tBSTNode));
+
+		if (*RootPtr == NULL) //malloc FAILED
+			return;
+
 		(*RootPtr)->Key = K;
 		(*RootPtr)->BSTNodeCont = Content;		
 		(*RootPtr)->LPtr = NULL;
